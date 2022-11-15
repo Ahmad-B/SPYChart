@@ -4,5 +4,5 @@ export interface SpyData {
     high: number
     low: number
     close: number
-    volumne: number
+    volume: number
 }
