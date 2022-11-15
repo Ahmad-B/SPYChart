@@ -63,7 +63,7 @@ export default function SPYDataViewer(props: Props) {
 
     return (
         <div>
-            <h2>SPY Data</h2>
+            <h2 aria-label="viewer-header">SPY Data</h2>
             <ChartOptionSelectors data={props.spyData} theme={theme} format={format} fromDate={fromDate} toDate={toDate} showGridLines={showGridLines} onSelectedFormat={setFormat} onSelectedFromDate={setFromDate} onSelectedToDate={setToDate} onShowGridLinesChanged={setShowGridLines} onSelectedTheme={(t) => { setTheme(t); colorMode.toggleColorMode() }} />
             <SpyDataChart data={displaySpyData()} formatting={format === -1 ? undefined : format} theme={theme} showGridLines={showGridLines} />
         </div>

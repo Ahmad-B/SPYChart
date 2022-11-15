@@ -68,10 +68,11 @@ export default function ChartOptionSelectors(props: Props) {
                 </LocalizationProvider>
 
                 <FormControl sx={{ m: 1, minWidth: 120 }} size="medium">
-                    <InputLabel id="demo-select-small">Price Format</InputLabel>
+                    <InputLabel id="format-select">Price Format</InputLabel>
                     <Select
-                        labelId="demo-select-small"
-                        id="demo-select-small"
+                        aria-label="format-selector"
+                        data-testid="format-selector"
+                        id="format-select"
                         value={props.format}
                         label="Price Format"
                         onChange={(e) => props.onSelectedFormat(e.target.value as number)}
@@ -81,10 +82,11 @@ export default function ChartOptionSelectors(props: Props) {
                 </FormControl>
 
                 <FormControl sx={{ m: 1, minWidth: 120 }} size="medium">
-                    <InputLabel id="demo-select-small">Grid Lines</InputLabel>
+                    <InputLabel id="gridlines-select">Grid Lines</InputLabel>
                     <Select
-                        labelId="demo-select-small"
-                        id="demo-select-small"
+                        aria-label="gridlines-selector"
+                        data-testid="gridlines-selector"
+                        id="gridlines-select"
                         value={props.showGridLines ? "Show" : "Hide"}
                         label="Grid Lines"
                         onChange={(e) => props.onShowGridLinesChanged(e.target.value === "Show" ? true : false)}
@@ -96,10 +98,11 @@ export default function ChartOptionSelectors(props: Props) {
                 </FormControl>
 
                 <FormControl sx={{ m: 1, minWidth: 120 }} size="medium">
-                    <InputLabel id="demo-select-small">Theme</InputLabel>
+                    <InputLabel id="theme-select">Theme</InputLabel>
                     <Select
-                        labelId="demo-select-small"
-                        id="demo-select-small"
+                        aria-label="themes-selector"
+                        data-testid="themes-selector"
+                        id="themes-select"
                         value={props.theme}
                         label="Theme"
                         onChange={(e) => props.onSelectedTheme(e.target.value as Theme)}
@@ -109,7 +112,7 @@ export default function ChartOptionSelectors(props: Props) {
 
                     </Select>
                 </FormControl>
-                
+
             </Stack>
         </div>
     );

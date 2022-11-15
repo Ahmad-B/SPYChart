@@ -36,7 +36,12 @@ export default function SpyDataChart(props: Props) {
             },
             zoom: {
                 enabled: false
-            }
+            },
+        },
+        title: {
+            text: "SPY",
+            align: "left"
+
         },
         plotOptions: {
             candlestick: {

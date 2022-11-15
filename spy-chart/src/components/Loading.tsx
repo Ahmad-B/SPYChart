@@ -19,7 +19,7 @@ export default function Loading(props: Props) {
                 <Box sx={{ display: 'flex' }}>
                     <CircularProgress />
                 </Box>
-                <p> Loading {props.name} please wait... </p>
+                <p aria-label="LoadingMessageDisplay"> Loading {props.name} please wait... </p>
             </Stack>
 
         </div>

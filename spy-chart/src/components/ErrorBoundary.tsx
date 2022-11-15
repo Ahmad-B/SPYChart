@@ -17,7 +17,7 @@ export default function ErrorBonudary(props: Props) {
             <Stack alignItems="center">
                 <Alert severity="error">
                     <AlertTitle>Error</AlertTitle>
-                    <p>{props.message ?? 'An error has occured, please try refreshing the page'}</p>
+                    <p aria-label="ErrorMessageDisplay">{props.message ?? 'An error has occured, please try refreshing the page'}</p>
                 </Alert>
             </Stack>
 
